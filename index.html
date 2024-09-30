@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>班级百科 - 艺术节</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #202122;
+            font-size: 14px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #a2a9b1;
+            padding: 10px 0;
+            margin-bottom: 15px;
+        }
+        .header-content {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+        }
+        .search-bar {
+            display: flex;
+        }
+        .search-bar input {
+            padding: 6px;
+            border: 1px solid #a2a9b1;
+            border-right: none;
+            border-radius: 2px 0 0 2px;
+            width: 200px;
+        }
+        .search-bar button {
+            padding: 6px 12px;
+            background-color: #36c;
+            color: white;
+            border: none;
+            border-radius: 0 2px 2px 0;
+            cursor: pointer;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 3px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: none; /* 移除h3下方的线段 */
+        }
+        h4 {
+            font-size: 16px;
+            border-bottom: none;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .toc {
+            background-color: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 8px;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+        .toc h2 {
+            margin-top: 0;
+            font-size: 16px;
+            border-bottom: none;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 15px;
+            margin: 5px 0;
+        }
+        .toc ul ul {
+            padding-left: 20px;
+        }
+        .toc a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 13px;
+        }
+        th, td {
+            border: 1px solid #a2a9b1;
+            padding: 6px;
+        }
+        th {
+            background-color: #eaecf0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .infobox {
+            float: right;
+            margin: 0 0 15px 15px;
+            border: 1px solid #a2a9b1;
+            padding: 8px;
+            background-color: #f8f9fa;
+            width: 270px;
+            font-size: 13px;
+        }
+        .infobox h3 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .infobox img {
+            display: block;
+            margin: 0 auto;
+            max-width: 250px;
+        }
+        .uninfobox {
+            float: left;
+            margin: 15px 15px 0 0;
+            border: 1px solid #a2a9b1;
+            padding: 8px;
+            background-color: #f8f9fa;
+            width: 270px;
+            font-size: 13px;
+        }
+        .uninfobox img {
+            display: block;
+            margin: 0 auto;
+            max-width: 250px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #a2a9b1;
+            padding: 15px 0;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #72777d;
+        }
+        @media (max-width: 768px) {
+            .infobox {
+                float: none;
+                width: 100%;
+                margin: 15px 0;
+            }
+            .header-content {
+                flex-direction: column;
+            }
+            .search-bar {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 页面内容保持不变 -->
+    <div class="header">
+        <div class="header-content">
+            <a href="#" class="logo">12班班级百科</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>艺术节</h1>
+        
+        <div class="infobox">
+            <h3>艺术节</h3>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%23ddd'/%3E%3Ctext x='50%25' y='50%25' font-size='18' text-anchor='middle' alignment-baseline='middle' font-family='Arial, sans-serif' fill='%23555555'%3E示例图片%3C/text%3E%3C/svg%3E" alt="示例图片">
+            <table>
+                <tr>
+                    <th>时间</th>
+                    <td>2023年</td>
+                </tr>
+                <tr>
+                    <th>地点</th>
+                    <td>礼堂</td>
+                </tr>
+                <tr>
+                    <th>发起人</th>
+                    <td>校级领导</td>
+                </tr>
+            </table>
+        </div>
+
+        <p>艺术节是由校级领导发起的，每届举办一次的才艺表演比赛，旨在为学生提供展示艺术才能的机会。活动覆盖广泛，部分学生积极参与，表演形式多样，包括相声、舞蹈、歌曲等。艺术节不仅是一个展示个人或团队才艺的平台，也是提升校园文化氛围、促进学生交流与合作的重要活动。</p>
+
+        <div class="toc">
+            <h2>目录</h2>
+            <ul>
+                <li><a href="#section1">1. 十二班的艺术节</a>
+                    <ul>
+                        <li><a href="#section1-1">1.1 演出前</a></li>
+                        <li><a href="#section1-2">1.2 表演结果</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+
+        <h2 id="section1">1. 十二班的艺术节</h2>
+       
+
+        <h3 id="section1-1">1.1 演出前</h3>
+        <p><a href="https://shierban-github-io.pages.dev/">十二班</a>确认的节目为相声《三打白骨精》、舞蹈《有色眼镜》、和歌曲《水中花》。参赛学生利用用餐、午休或自习时间自发组织节目排练。班级宣传委员为本次艺术节设计了<a href="https://shierban-github-io.pages.dev/">十二班</a>的海报，巧妙融合了三个节目中的元素。</p>
+
+        <h3 id="section1-2">1.2 表演结果</h3>
+        <p>《有色眼镜》节目由于学校可能存在的对学生的个性的压抑，导致表演时部分表情沮丧，表演效果不佳，并未晋级。</p>
+    </div>
+
+    <div class="footer">
+        <p>本页面最后编辑于2024年几月几日 (星期几) 不知道（UTC）。</p>
+        <p>本站的全部文字在知识共享 署名-相同方式共享 3.0协议之条款下提供，附加条款亦可能应用。</p>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+                  </html>
